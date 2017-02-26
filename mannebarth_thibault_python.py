@@ -250,3 +250,51 @@ print '\n'
 print 'viewvalues'
 print dist.viewvalues()
 print '\n'
+
+print'*---- Lists Functions ----*'
+li = ['bonjour', 1994 , 'Troyes', 'salut']
+print 'Liste Utilisee: ', li
+print '\n'
+
+print 'append'
+li.append('test')
+print li
+print '\n'
+
+print 'count'
+print li.count(2)
+print '\n'
+
+print 'extend'
+li.extend('extend')
+print li
+print '\n'
+
+print 'index'
+print li.index('Troyes')
+print '\n'
+
+print 'insert'
+li.insert(4,'aurevoir')
+print li
+print '\n'
+
+print 'pop'
+li.pop()
+print li
+print '\n'
+
+print 'remove 1994'
+li.remove(1994)
+print li
+print '\n'
+
+print 'reverse'
+li.reverse()
+print li
+print '\n'
+
+print 'sort'
+li.sort()
+print li
+print '\n'
