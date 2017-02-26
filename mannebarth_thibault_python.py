@@ -164,3 +164,89 @@ tab2 = "12345"
 translatedtab = maketrans(tab1, tab2)
 print(format(str4.translate(translatedtab)))
 print '\n'
+
+print '*---- Dictionary Functions ----*'
+dist = {'nom': 'thibault', 'age': 22}
+print dist, '\n\n'
+
+print 'copy'
+dist2 = dist.copy()
+print dist2
+print '\n'
+
+print 'clear'
+dist2.clear()
+print dist2
+print '\n'
+
+print 'fromkeys'
+dist3 = dist.fromkeys('age', 32)
+print dist3
+print '\n'
+
+print 'get'
+print dist.get('nom')
+print '\n'
+
+print 'has_key'
+print dist.has_key('age')
+print '\n'
+
+print 'items'
+print dist.items()
+print '\n'
+
+print 'iteritems'
+dictitem =  dist.iteritems()
+print dictitem
+print '\n'
+
+print 'iterkeys'
+print dist.iterkeys()
+print '\n'
+
+print 'itervalues'
+print dist.itervalues()
+print '\n'
+
+print 'keys'
+print dist.keys()
+print '\n'
+
+print 'pop age'
+dist.pop('age')
+print dist
+print '\n'
+
+print 'popitem'
+dist.popitem()
+print dist
+print '\n'
+
+print 'setdefault'
+print dist.setdefault('nom')
+print dist
+print '\n'
+
+print 'update'
+dist4 = {'sexe': 'masculin'}
+print dist4
+dist.update(dist4)
+print dist
+print '\n'
+
+print 'values'
+print dist.values()
+print '\n'
+
+print 'viewitems'
+print dist.viewitems()
+print '\n'
+
+print 'viewkeys'
+print dist.viewkeys()
+print '\n'
+
+print 'viewvalues'
+print dist.viewvalues()
+print '\n'
