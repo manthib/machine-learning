@@ -25,6 +25,11 @@ model.fit(data_train[:None], target_train)
 print 'perf: '
 print model.score(data_test[:None], target_test)
     
+# variable with the more impact ?
+features = ['mean radius', 'mean texture', 'mean perimeter', 'mean area', 'mean smoothness', 'mean compactness', 'mean concavity', 'mean concave points', 'mean symmetry', 'mean fractal dimension', 'radius error', 'texture error', 'perimeter error', 'area error', 'smoothness error', 'compactness error', 'concavity error', 'concave points error', 'symmetry error', 'fractal dimension error', 'worst radius', 'worst texture', 'worst perimeter', 'worst area', 'worst smoothness', 'worst compactness', 'worst concavity', 'worst concave points', 'worst symmetry', 'worst fractal dimension']
+for feature, imp in zip(features, model.feature_importances_):
+    print(feature, imp)    
+    
 # ## now we predict
 print('==> predict: ')
 prediction = model.predict(data_test[:None])
