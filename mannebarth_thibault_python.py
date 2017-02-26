@@ -1,3 +1,5 @@
+from string import maketrans
+
 string = 'Bonjour Madame comment allez-vous ?'
 print 'String utilisee: ', string
 print '\n'
@@ -153,4 +155,12 @@ print '\n'
 
 print 'zfill'
 print string.zfill(50)
+print '\n'
+
+print 'translate'
+str4 = 'thib'
+tab1 = "aeiou"
+tab2 = "12345"
+translatedtab = maketrans(tab1, tab2)
+print(format(str4.translate(translatedtab)))
 print '\n'
